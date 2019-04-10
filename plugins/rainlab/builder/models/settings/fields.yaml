@@ -1,0 +1,24 @@
+fields:
+    author_name:
+        label: 'rainlab.builder::lang.author_name.title'
+        span: left
+        type: text
+        commentAbove: 'rainlab.builder::lang.author_name.description'
+    author_namespace:
+        span: right
+        label: 'rainlab.builder::lang.author_namespace.title'
+        commentAbove: 'rainlab.builder::lang.author_namespace.description'
+        preset:
+            field: author_name
+            type: namespace
+        type: text
+    fileupload1:
+        label: 'File upload'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        cssClass: ''
+        type: fileupload
