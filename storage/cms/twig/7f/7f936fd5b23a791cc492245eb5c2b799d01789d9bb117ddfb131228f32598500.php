@@ -124,43 +124,50 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
         // line 65
         echo "    </section>
 
+      ";
+        // line 67
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/about"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 68
+        echo "
     <!-- Footer -->
     <footer id=\"layout-footer\">
       ";
-        // line 69
+        // line 71
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 70
+        // line 72
         echo "    </footer>
 
     <!-- Scripts -->
     <script src=\"";
-        // line 73
+        // line 75
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery/jquery.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 74
+        // line 76
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap/js/bootstrap.bundle.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 75
+        // line 77
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery-easing/jquery.easing.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 76
+        // line 78
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/magnific-popup/jquery.magnific-popup.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 77
+        // line 79
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jqBootstrapValidation.js");
         echo "\"></script>
     <script src=\"";
-        // line 78
+        // line 80
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/contact_me.js");
         echo "\"></script>
     <script src=\"";
-        // line 79
+        // line 81
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/freelancer.min.js\"");
         echo "\"></script>
     
@@ -181,7 +188,7 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
 
     public function getDebugInfo()
     {
-        return array (  164 => 79,  160 => 78,  156 => 77,  152 => 76,  148 => 75,  144 => 74,  140 => 73,  135 => 70,  131 => 69,  125 => 65,  123 => 64,  117 => 60,  113 => 59,  109 => 57,  105 => 56,  100 => 53,  97 => 52,  91 => 49,  81 => 42,  61 => 25,  52 => 19,  45 => 15,  41 => 14,  36 => 12,  23 => 1,);
+        return array (  171 => 81,  167 => 80,  163 => 79,  159 => 78,  155 => 77,  151 => 76,  147 => 75,  142 => 72,  138 => 71,  133 => 68,  129 => 67,  125 => 65,  123 => 64,  117 => 60,  113 => 59,  109 => 57,  105 => 56,  100 => 53,  97 => 52,  91 => 49,  81 => 42,  61 => 25,  52 => 19,  45 => 15,  41 => 14,  36 => 12,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -251,6 +258,8 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
     <section id=\"layout-content\">
       {% page %}
     </section>
+
+      {% partial 'site/about' %}
 
     <!-- Footer -->
     <footer id=\"layout-footer\">

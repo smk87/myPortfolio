@@ -1,0 +1,11 @@
+plugin:
+    name: 'saqlain.project::lang.plugin.name'
+    description: 'saqlain.project::lang.plugin.description'
+    author: Saqlain
+    icon: oc-icon-code
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Project
+        url: saqlain/project/projects
+        icon: icon-code

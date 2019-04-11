@@ -1,0 +1,10 @@
+name: Projects
+form: $/saqlain/project/models/project/fields.yaml
+modelClass: Saqlain\Project\Models\Project
+defaultRedirect: saqlain/project/projects
+create:
+    redirect: 'saqlain/project/projects/update/:id'
+    redirectClose: saqlain/project/projects
+update:
+    redirect: saqlain/project/projects
+    redirectClose: saqlain/project/projects

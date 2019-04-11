@@ -1,0 +1,21 @@
+fields:
+    name:
+        label: 'Project Name'
+        span: auto
+        placeholder: 'Enter the project''s name'
+        type: text
+tabs:
+    fields:
+        description:
+            label: 'Project Description'
+            span: full
+            size: ''
+            placeholder: 'Enter project''s description'
+            type: richeditor
+            tab: 'Tab 1'
+        year:
+            label: 'Project Finished In'
+            span: auto
+            cssClass: ''
+            type: text
+            tab: 'Tab 1'

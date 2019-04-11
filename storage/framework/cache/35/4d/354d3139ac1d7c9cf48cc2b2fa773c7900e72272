@@ -1,4 +1,4 @@
-1554919298a:1:{s:15:"site/navbar.htm";a:6:{s:8:"fileName";s:15:"site/navbar.htm";s:7:"content";s:1411:"==
+1555005823a:1:{s:15:"site/navbar.htm";a:6:{s:8:"fileName";s:15:"site/navbar.htm";s:7:"content";s:1410:"==
 <!-- Navigation -->
 <nav
   class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase"
@@ -6,7 +6,7 @@
 >
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top"
-      >Start Bootstrap</a
+      >Saqlain Mahmud</a
     >
     <button
       class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
@@ -46,14 +46,14 @@
       </ul>
     </div>
   </div>
-</nav>";s:5:"mtime";i:1554915920;s:6:"markup";s:1407:"<!-- Navigation -->
+</nav>";s:5:"mtime";i:1554994746;s:6:"markup";s:1406:"<!-- Navigation -->
 <nav
   class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase"
   id="mainNav"
 >
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top"
-      >Start Bootstrap</a
+      >Saqlain Mahmud</a
     >
     <button
       class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"

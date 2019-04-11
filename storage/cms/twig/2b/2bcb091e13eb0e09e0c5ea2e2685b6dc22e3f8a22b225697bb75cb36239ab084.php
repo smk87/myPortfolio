@@ -27,7 +27,7 @@ class __TwigTemplate_6223d4edca729652e258451aaa4f6e69469ff99081d9bdc3ae6298a2779
 >
   <div class=\"container\">
     <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\"
-      >Start Bootstrap</a
+      >Saqlain Mahmud</a
     >
     <button
       class=\"navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded\"
@@ -89,7 +89,7 @@ class __TwigTemplate_6223d4edca729652e258451aaa4f6e69469ff99081d9bdc3ae6298a2779
 >
   <div class=\"container\">
     <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\"
-      >Start Bootstrap</a
+      >Saqlain Mahmud</a
     >
     <button
       class=\"navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded\"
