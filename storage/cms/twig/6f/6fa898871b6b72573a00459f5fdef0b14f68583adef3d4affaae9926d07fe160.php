@@ -68,13 +68,13 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             }
             // line 20
             echo "
-        <div class=\"col-md-6 col-lg-4\">
+        <div class=\"col-md-6 col-lg-3\">
           <a class=\"portfolio-item d-block mx-auto\" href=\"#portfolio-modal-";
             // line 22
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
             echo "\">
             <div
-              class=\"portfolio-item-caption d-flex position-absolute h-100 w-100\"
+              class=\"portfolio-item-caption rounded d-flex position-absolute h-100 w-100\"
             >
               <div
                 class=\"portfolio-item-caption-content my-auto w-100 text-center text-white\"
@@ -85,25 +85,25 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             <h4 class=\"text-center\">";
             // line 32
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "name", []), "html", null, true);
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
             echo "</h4>
             <img
-              class=\"img-fluid\"
+              class=\"img-fluid rounded mx-auto d-block\"
               src=\"";
             // line 35
-            echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/img/portfolio/cabin.png");
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["record"], "thumbnail", []), "path", []), "html", null, true);
             echo "\"
               alt=\"\"
+              width=\"100%\"
             />
           </a>
         </div>
 
         <!-- Modal -->
         <div class=\"portfolio-modal mfp-hide\" id=\"portfolio-modal-";
-            // line 42
+            // line 43
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
             echo "\">
-          <div class=\"portfolio-modal-dialog bg-white\">
+          <div class=\"portfolio-modal-dialog rounded\" style=\"background-color: #6A89CC\">
             <a
               class=\"close-button d-none d-md-block portfolio-modal-dismiss\"
               href=\"#\"
@@ -114,20 +114,26 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
               <div class=\"row\">
                 <div class=\"col-lg-8 mx-auto\">
                   <h2 class=\"text-secondary text-uppercase mb-0\">
-                    Project Name
+                    ";
+            // line 55
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "name", []), "html", null, true);
+            echo "
                   </h2>
                   <hr class=\"star-dark mb-5\" />
-                  <img
-                    class=\"img-fluid mb-5\"
-                    src=\"img/portfolio/cabin.png\"
-                    alt=\"\"
-                  />
-                  <p class=\"mb-5\">
-                    ";
-            // line 63
+                  ";
+            // line 58
+            $context['__cms_partial_params'] = [];
+            $context['__cms_partial_params']['images'] = twig_get_attribute($this->env, $this->source, $context["record"], "ss", [])            ;
+            echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/imageslider"            , $context['__cms_partial_params']            , true            );
+            unset($context['__cms_partial_params']);
+            // line 59
+            echo "                  <p class=\"mb-5 mt-5 h3\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "description", []), "html", null, true);
+            echo "</p>
+                  <p class=\"mb-5 mt-5 h5\">Completed In: ";
+            // line 60
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "year", []), "html", null, true);
-            echo "
-                  </p>
+            echo "</p>
                   <a
                     class=\"btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss\"
                     href=\"#\"
@@ -142,20 +148,20 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
         </div>
 
         ";
-            // line 78
+            // line 74
             if (($context["detailsPage"] ?? null)) {
-                // line 79
+                // line 75
                 echo "      </a>
       ";
             }
-            // line 80
+            // line 76
             echo " ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
             echo " ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 81
+            // line 77
             echo "      <li class=\"no-data\">";
             echo twig_escape_filter($this->env, ($context["noRecordsMessage"] ?? null), "html", null, true);
             echo "</li>
@@ -164,7 +170,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 83
+        // line 79
         echo "    </div>
   </div>
 </section>";
@@ -182,7 +188,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
 
     public function getDebugInfo()
     {
-        return array (  168 => 83,  159 => 81,  152 => 80,  148 => 79,  146 => 78,  128 => 63,  104 => 42,  94 => 35,  87 => 32,  74 => 22,  70 => 20,  64 => 17,  61 => 16,  59 => 15,  55 => 14,  47 => 13,  44 => 12,  41 => 11,  38 => 10,  35 => 9,  32 => 8,  23 => 1,);
+        return array (  174 => 79,  165 => 77,  158 => 76,  154 => 75,  152 => 74,  135 => 60,  130 => 59,  125 => 58,  119 => 55,  104 => 43,  93 => 35,  87 => 32,  74 => 22,  70 => 20,  64 => 17,  61 => 16,  59 => 15,  55 => 14,  47 => 13,  44 => 12,  41 => 11,  38 => 10,  35 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -207,10 +213,10 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
       >
         {% endif %}
 
-        <div class=\"col-md-6 col-lg-4\">
+        <div class=\"col-md-6 col-lg-3\">
           <a class=\"portfolio-item d-block mx-auto\" href=\"#portfolio-modal-{{record.id}}\">
             <div
-              class=\"portfolio-item-caption d-flex position-absolute h-100 w-100\"
+              class=\"portfolio-item-caption rounded d-flex position-absolute h-100 w-100\"
             >
               <div
                 class=\"portfolio-item-caption-content my-auto w-100 text-center text-white\"
@@ -218,18 +224,19 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
                 <i class=\"fas fa-search-plus fa-3x\"></i>
               </div>
             </div>
-            <h4 class=\"text-center\">{{ record.name }}{{record.id}}</h4>
+            <h4 class=\"text-center\">{{ record.name }}</h4>
             <img
-              class=\"img-fluid\"
-              src=\"{{ 'assets/img/portfolio/cabin.png' | theme }}\"
+              class=\"img-fluid rounded mx-auto d-block\"
+              src=\"{{record.thumbnail.path}}\"
               alt=\"\"
+              width=\"100%\"
             />
           </a>
         </div>
 
         <!-- Modal -->
         <div class=\"portfolio-modal mfp-hide\" id=\"portfolio-modal-{{record.id}}\">
-          <div class=\"portfolio-modal-dialog bg-white\">
+          <div class=\"portfolio-modal-dialog rounded\" style=\"background-color: #6A89CC\">
             <a
               class=\"close-button d-none d-md-block portfolio-modal-dismiss\"
               href=\"#\"
@@ -240,17 +247,12 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
               <div class=\"row\">
                 <div class=\"col-lg-8 mx-auto\">
                   <h2 class=\"text-secondary text-uppercase mb-0\">
-                    Project Name
+                    {{record.name}}
                   </h2>
                   <hr class=\"star-dark mb-5\" />
-                  <img
-                    class=\"img-fluid mb-5\"
-                    src=\"img/portfolio/cabin.png\"
-                    alt=\"\"
-                  />
-                  <p class=\"mb-5\">
-                    {{record.year}}
-                  </p>
+                  {% partial 'site/imageslider' images=record.ss %}
+                  <p class=\"mb-5 mt-5 h3\">{{record.description}}</p>
+                  <p class=\"mb-5 mt-5 h5\">Completed In: {{record.year}}</p>
                   <a
                     class=\"btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss\"
                     href=\"#\"

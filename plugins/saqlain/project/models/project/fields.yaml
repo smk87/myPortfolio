@@ -10,12 +10,33 @@ tabs:
             label: 'Project Description'
             span: full
             size: ''
-            placeholder: 'Enter project''s description'
-            type: richeditor
+            placeholder: 'Enter Project''s Description'
+            type: textarea
             tab: 'Tab 1'
         year:
             label: 'Project Finished In'
             span: auto
             cssClass: ''
             type: text
+            tab: 'Tab 1'
+        thumbnail:
+            label: 'Project Thumbnail'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            cssClass: ''
+            type: fileupload
+            tab: 'Tab 1'
+        ss:
+            label: 'Project Images'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: right
+            type: fileupload
             tab: 'Tab 1'

@@ -1,4 +1,4 @@
-1555006323a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:3437:"title = "Index"
+1555065146a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:3449:"title = "Index"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -33,10 +33,10 @@ pageNumber = "{{ :page }}"
       >
         {% endif %}
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{record.id}}">
             <div
-              class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              class="portfolio-item-caption rounded d-flex position-absolute h-100 w-100"
             >
               <div
                 class="portfolio-item-caption-content my-auto w-100 text-center text-white"
@@ -44,18 +44,19 @@ pageNumber = "{{ :page }}"
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <h4 class="text-center">{{ record.name }}{{record.id}}</h4>
+            <h4 class="text-center">{{ record.name }}</h4>
             <img
-              class="img-fluid"
-              src="{{ 'assets/img/portfolio/cabin.png' | theme }}"
+              class="img-fluid rounded mx-auto d-block"
+              src="{{record.thumbnail.path}}"
               alt=""
+              width="100%"
             />
           </a>
         </div>
 
         <!-- Modal -->
         <div class="portfolio-modal mfp-hide" id="portfolio-modal-{{record.id}}">
-          <div class="portfolio-modal-dialog bg-white">
+          <div class="portfolio-modal-dialog rounded" style="background-color: #6A89CC">
             <a
               class="close-button d-none d-md-block portfolio-modal-dismiss"
               href="#"
@@ -66,17 +67,12 @@ pageNumber = "{{ :page }}"
               <div class="row">
                 <div class="col-lg-8 mx-auto">
                   <h2 class="text-secondary text-uppercase mb-0">
-                    Project Name
+                    {{record.name}}
                   </h2>
                   <hr class="star-dark mb-5" />
-                  <img
-                    class="img-fluid mb-5"
-                    src="img/portfolio/cabin.png"
-                    alt=""
-                  />
-                  <p class="mb-5">
-                    {{record.year}}
-                  </p>
+                  {% partial 'site/imageslider' images=record.ss %}
+                  <p class="mb-5 mt-5 h3">{{record.description}}</p>
+                  <p class="mb-5 mt-5 h5">Completed In: {{record.year}}</p>
                   <a
                     class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
                     href="#"
@@ -97,7 +93,7 @@ pageNumber = "{{ :page }}"
       {% endfor %}
     </div>
   </div>
-</section>";s:5:"mtime";i:1555005722;s:6:"markup";s:3114:"<section class="portfolio" id="portfolio">
+</section>";s:5:"mtime";i:1555064545;s:6:"markup";s:3126:"<section class="portfolio" id="portfolio">
   <div class="container">
     <h2 class="text-center text-uppercase text-secondary mb-0">
       Projects
@@ -117,10 +113,10 @@ pageNumber = "{{ :page }}"
       >
         {% endif %}
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{record.id}}">
             <div
-              class="portfolio-item-caption d-flex position-absolute h-100 w-100"
+              class="portfolio-item-caption rounded d-flex position-absolute h-100 w-100"
             >
               <div
                 class="portfolio-item-caption-content my-auto w-100 text-center text-white"
@@ -128,18 +124,19 @@ pageNumber = "{{ :page }}"
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <h4 class="text-center">{{ record.name }}{{record.id}}</h4>
+            <h4 class="text-center">{{ record.name }}</h4>
             <img
-              class="img-fluid"
-              src="{{ 'assets/img/portfolio/cabin.png' | theme }}"
+              class="img-fluid rounded mx-auto d-block"
+              src="{{record.thumbnail.path}}"
               alt=""
+              width="100%"
             />
           </a>
         </div>
 
         <!-- Modal -->
         <div class="portfolio-modal mfp-hide" id="portfolio-modal-{{record.id}}">
-          <div class="portfolio-modal-dialog bg-white">
+          <div class="portfolio-modal-dialog rounded" style="background-color: #6A89CC">
             <a
               class="close-button d-none d-md-block portfolio-modal-dismiss"
               href="#"
@@ -150,17 +147,12 @@ pageNumber = "{{ :page }}"
               <div class="row">
                 <div class="col-lg-8 mx-auto">
                   <h2 class="text-secondary text-uppercase mb-0">
-                    Project Name
+                    {{record.name}}
                   </h2>
                   <hr class="star-dark mb-5" />
-                  <img
-                    class="img-fluid mb-5"
-                    src="img/portfolio/cabin.png"
-                    alt=""
-                  />
-                  <p class="mb-5">
-                    {{record.year}}
-                  </p>
+                  {% partial 'site/imageslider' images=record.ss %}
+                  <p class="mb-5 mt-5 h3">{{record.description}}</p>
+                  <p class="mb-5 mt-5 h5">Completed In: {{record.year}}</p>
                   <a
                     class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
                     href="#"
