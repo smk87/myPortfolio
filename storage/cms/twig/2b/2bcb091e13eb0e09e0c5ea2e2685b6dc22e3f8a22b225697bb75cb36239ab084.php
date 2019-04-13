@@ -47,7 +47,7 @@ class __TwigTemplate_6223d4edca729652e258451aaa4f6e69469ff99081d9bdc3ae6298a2779
           <a
             class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\"
             href=\"#portfolio\"
-            >Portfolio</a
+            >Projects</a
           >
         </li>
         <li class=\"nav-item mx-0 mx-lg-1\">
@@ -109,7 +109,7 @@ class __TwigTemplate_6223d4edca729652e258451aaa4f6e69469ff99081d9bdc3ae6298a2779
           <a
             class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\"
             href=\"#portfolio\"
-            >Portfolio</a
+            >Projects</a
           >
         </li>
         <li class=\"nav-item mx-0 mx-lg-1\">
