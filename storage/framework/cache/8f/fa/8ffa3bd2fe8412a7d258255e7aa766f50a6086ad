@@ -1,4 +1,5 @@
-1555064746a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2297:"<!-- Footer -->
+1555146718a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2301:"==
+<!-- Footer -->
 <footer class="footer text-center">
   <div class="container">
     <div class="row">
@@ -64,10 +65,9 @@
 
 <div class="copyright py-4 text-center text-white">
   <div class="container">
-    <small>Copyright &copy; Your Website 2019</small>
+    <small>Copyright &copy; Saqlain Mahmud 2019</small>
   </div>
-</div>
-";s:5:"mtime";i:1554913966;s:6:"markup";s:2295:"<!-- Footer -->
+</div>";s:5:"mtime";i:1555065477;s:6:"markup";s:2297:"<!-- Footer -->
 <footer class="footer text-center">
   <div class="container">
     <div class="row">
@@ -133,6 +133,6 @@
 
 <div class="copyright py-4 text-center text-white">
   <div class="container">
-    <small>Copyright &copy; Your Website 2019</small>
+    <small>Copyright &copy; Saqlain Mahmud 2019</small>
   </div>
-</div>";s:4:"code";N;}}
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

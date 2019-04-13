@@ -1,36 +1,90 @@
-<div
-  id="carouselExampleControls"
-  class="carousel slide"
-  data-ride="carousel"
-  style="background-color: #192A56"
->
-  <div class="carousel-inner">
-    {% for key, image in images %} {% if key==0 %}
-    <div class="carousel-item active">
-      <img src="{{ image.path }}" class="d-block" style="width:50%" alt="..." />
-    </div>
-    {% else %}
-    <div class="carousel-item">
-      <img src="{{ image.path }}" class="d-block h-50" alt="..." />
-    </div>
-    {% endif %} {% endfor %}
-  </div>
-  <a
-    class="carousel-control-prev"
-    href="#carouselExampleControls"
-    role="button"
-    data-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a
-    class="carousel-control-next"
-    href="#carouselExampleControls"
-    role="button"
-    data-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Saqlain Mahmud</title>
+    <meta name="description" content="Online Portfolio of Saqlain Mahmud" />
+    <meta name="author" content="Saqlain Mahmud" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ 'assets/images/october.png' | theme }}"
+    />
+    <link href="{{ 'assets/css/vendor.css' | theme }}" rel="stylesheet" />
+    <link href="{{ 'assets/css/theme.css' | theme }}" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css' | theme }}"
+      rel="stylesheet"
+    />
+
+    <!-- Custom fonts for this template -->
+    <link
+      href="{{ 'assets/vendor/fontawesome-free/css/all.min.css' | theme }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Plugin CSS -->
+    <link
+      href="{{ 'assets/vendor/magnific-popup/magnific-popup.css' | theme }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link
+      href="{{ 'assets/css/freelancer.min.css' | theme }}"
+      rel="stylesheet"
+    />
+    {% styles %}
+  </head>
+  <body>
+    
+     {% partial 'site/navbar' %}
+    
+    <header id="layout-header">
+      {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    <section id="layout-content">
+      {% page %}
+    </section>
+
+      {% partial 'site/about' %}
+
+    <!-- Footer -->
+    <footer id="layout-footer">
+      {% partial 'site/footer' %}
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ 'assets/vendor/jquery/jquery.min.js' | theme }}"></script>
+    <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | theme }}"></script>
+    <script src="{{ 'assets/vendor/jquery-easing/jquery.easing.min.js' | theme }}"></script>
+    <script src="{{ 'assets/vendor/magnific-popup/jquery.magnific-popup.min.js' | theme }}"></script>
+    <script src="{{ 'assets/js/jqBootstrapValidation.js' | theme }}"></script>
+    <script src="{{ 'assets/js/contact_me.js' | theme }}"></script>
+    <script src="{{ 'assets/js/freelancer.min.js"' | theme }}"></script>
+    <script>
+    $(document).ready(function() {
+  if(window.location.href.indexOf('#portfolio-modal-4') != -1) {
+    $('#portfolio-modal-4').modal('show');
+  }
+});
+    </script>
+  </body>
+</html>

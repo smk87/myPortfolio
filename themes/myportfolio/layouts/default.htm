@@ -80,7 +80,14 @@
     <script src="{{ 'assets/js/jqBootstrapValidation.js' | theme }}"></script>
     <script src="{{ 'assets/js/contact_me.js' | theme }}"></script>
     <script src="{{ 'assets/js/freelancer.min.js"' | theme }}"></script>
-    
+    <script>
+    // Auto open modal for direct link
+    $(document).ready(function() {
+    if (window.location.hash && $(window.location.hash).length) {
+      $("#auto-"+window.location.hash.substring(17)).trigger("click");
+        }
+    });
+    </script>
     
   </body>
 </html>

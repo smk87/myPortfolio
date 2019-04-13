@@ -69,8 +69,10 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             // line 20
             echo "
         <div class=\"col-md-6 col-lg-3\">
-          <a class=\"portfolio-item d-block mx-auto\" href=\"#portfolio-modal-";
+          <a class=\"portfolio-item d-block mx-auto\" id=\"auto-";
             // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
+            echo "\" href=\"#portfolio-modal-";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
             echo "\">
             <div
@@ -103,7 +105,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             // line 43
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
             echo "\">
-          <div class=\"portfolio-modal-dialog rounded\" style=\"background-color: #6A89CC\">
+          <div class=\"portfolio-modal-dialog rounded\" style=\"background-color: white\">
             <a
               class=\"close-button d-none d-md-block portfolio-modal-dismiss\"
               href=\"#\"
@@ -127,13 +129,21 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/imageslider"            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
             // line 59
-            echo "                  <p class=\"mb-5 mt-5 h3\">";
+            echo "                  <hr style=\"border: 1px solid\">
+                  <p class=\"mb-5 mt-3 h3\">";
+            // line 60
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "description", []), "html", null, true);
             echo "</p>
                   <p class=\"mb-5 mt-5 h5\">Completed In: ";
-            // line 60
+            // line 61
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "year", []), "html", null, true);
-            echo "</p>
+            echo "
+                  <br>
+                  <a href=\"http://";
+            // line 63
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "url", []), "html", null, true);
+            echo "\">Link</a></p>
+                  
                   <a
                     class=\"btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss\"
                     href=\"#\"
@@ -146,22 +156,22 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             </div>
           </div>
         </div>
-
+        
         ";
-            // line 74
+            // line 78
             if (($context["detailsPage"] ?? null)) {
-                // line 75
+                // line 79
                 echo "      </a>
       ";
             }
-            // line 76
+            // line 80
             echo " ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
             echo " ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 77
+            // line 81
             echo "      <li class=\"no-data\">";
             echo twig_escape_filter($this->env, ($context["noRecordsMessage"] ?? null), "html", null, true);
             echo "</li>
@@ -170,7 +180,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['record'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 83
         echo "    </div>
   </div>
 </section>";
@@ -188,7 +198,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
 
     public function getDebugInfo()
     {
-        return array (  174 => 79,  165 => 77,  158 => 76,  154 => 75,  152 => 74,  135 => 60,  130 => 59,  125 => 58,  119 => 55,  104 => 43,  93 => 35,  87 => 32,  74 => 22,  70 => 20,  64 => 17,  61 => 16,  59 => 15,  55 => 14,  47 => 13,  44 => 12,  41 => 11,  38 => 10,  35 => 9,  32 => 8,  23 => 1,);
+        return array (  184 => 83,  175 => 81,  168 => 80,  164 => 79,  162 => 78,  144 => 63,  139 => 61,  135 => 60,  132 => 59,  127 => 58,  121 => 55,  106 => 43,  95 => 35,  89 => 32,  74 => 22,  70 => 20,  64 => 17,  61 => 16,  59 => 15,  55 => 14,  47 => 13,  44 => 12,  41 => 11,  38 => 10,  35 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -214,7 +224,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
         {% endif %}
 
         <div class=\"col-md-6 col-lg-3\">
-          <a class=\"portfolio-item d-block mx-auto\" href=\"#portfolio-modal-{{record.id}}\">
+          <a class=\"portfolio-item d-block mx-auto\" id=\"auto-{{record.id}}\" href=\"#portfolio-modal-{{record.id}}\">
             <div
               class=\"portfolio-item-caption rounded d-flex position-absolute h-100 w-100\"
             >
@@ -236,7 +246,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
 
         <!-- Modal -->
         <div class=\"portfolio-modal mfp-hide\" id=\"portfolio-modal-{{record.id}}\">
-          <div class=\"portfolio-modal-dialog rounded\" style=\"background-color: #6A89CC\">
+          <div class=\"portfolio-modal-dialog rounded\" style=\"background-color: white\">
             <a
               class=\"close-button d-none d-md-block portfolio-modal-dismiss\"
               href=\"#\"
@@ -251,8 +261,12 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
                   </h2>
                   <hr class=\"star-dark mb-5\" />
                   {% partial 'site/imageslider' images=record.ss %}
-                  <p class=\"mb-5 mt-5 h3\">{{record.description}}</p>
-                  <p class=\"mb-5 mt-5 h5\">Completed In: {{record.year}}</p>
+                  <hr style=\"border: 1px solid\">
+                  <p class=\"mb-5 mt-3 h3\">{{record.description}}</p>
+                  <p class=\"mb-5 mt-5 h5\">Completed In: {{record.year}}
+                  <br>
+                  <a href=\"http://{{record.url}}\">Link</a></p>
+                  
                   <a
                     class=\"btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss\"
                     href=\"#\"
@@ -265,7 +279,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             </div>
           </div>
         </div>
-
+        
         {% if detailsPage %}
       </a>
       {% endif %} {% endspaceless %} {% else %}

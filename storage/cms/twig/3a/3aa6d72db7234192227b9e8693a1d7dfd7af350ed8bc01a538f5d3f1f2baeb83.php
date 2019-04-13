@@ -86,7 +86,7 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
 
 <div class=\"copyright py-4 text-center text-white\">
   <div class=\"container\">
-    <small>Copyright &copy; Your Website 2019</small>
+    <small>Copyright &copy; Saqlain Mahmud 2019</small>
   </div>
 </div>";
     }
@@ -169,7 +169,7 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
 
 <div class=\"copyright py-4 text-center text-white\">
   <div class=\"container\">
-    <small>Copyright &copy; Your Website 2019</small>
+    <small>Copyright &copy; Saqlain Mahmud 2019</small>
   </div>
 </div>", "C:\\xampp\\htdocs\\myportfolio/themes/myportfolio/partials/site/footer.htm", "");
     }

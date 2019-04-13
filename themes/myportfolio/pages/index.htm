@@ -34,7 +34,7 @@ pageNumber = "{{ :page }}"
         {% endif %}
 
         <div class="col-md-6 col-lg-3">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{record.id}}">
+          <a class="portfolio-item d-block mx-auto" id="auto-{{record.id}}" href="#portfolio-modal-{{record.id}}">
             <div
               class="portfolio-item-caption rounded d-flex position-absolute h-100 w-100"
             >
@@ -56,7 +56,7 @@ pageNumber = "{{ :page }}"
 
         <!-- Modal -->
         <div class="portfolio-modal mfp-hide" id="portfolio-modal-{{record.id}}">
-          <div class="portfolio-modal-dialog rounded" style="background-color: #6A89CC">
+          <div class="portfolio-modal-dialog rounded" style="background-color: white">
             <a
               class="close-button d-none d-md-block portfolio-modal-dismiss"
               href="#"
@@ -71,8 +71,12 @@ pageNumber = "{{ :page }}"
                   </h2>
                   <hr class="star-dark mb-5" />
                   {% partial 'site/imageslider' images=record.ss %}
-                  <p class="mb-5 mt-5 h3">{{record.description}}</p>
-                  <p class="mb-5 mt-5 h5">Completed In: {{record.year}}</p>
+                  <hr style="border: 1px solid">
+                  <p class="mb-5 mt-3 h3">{{record.description}}</p>
+                  <p class="mb-5 mt-5 h5">Completed In: {{record.year}}
+                  <br>
+                  <a href="http://{{record.url}}">Link</a></p>
+                  
                   <a
                     class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
                     href="#"
@@ -85,7 +89,7 @@ pageNumber = "{{ :page }}"
             </div>
           </div>
         </div>
-
+        
         {% if detailsPage %}
       </a>
       {% endif %} {% endspaceless %} {% else %}

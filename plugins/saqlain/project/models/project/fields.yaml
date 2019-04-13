@@ -16,6 +16,7 @@ tabs:
         year:
             label: 'Project Finished In'
             span: auto
+            placeholder: YYYY
             cssClass: ''
             type: text
             tab: 'Tab 1'
@@ -39,4 +40,10 @@ tabs:
                 extension: auto
             span: right
             type: fileupload
+            tab: 'Tab 1'
+        url:
+            label: 'Project URL'
+            span: auto
+            placeholder: 'Enter Project''s URL'
+            type: text
             tab: 'Tab 1'

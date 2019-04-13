@@ -9,7 +9,7 @@ class BuilderTableUpdateSaqlainProject extends Migration
     {
         Schema::table('saqlain_project_', function($table)
         {
-            $table->string('year');
+            $table->string('url')->nullable();
         });
     }
     
@@ -17,7 +17,7 @@ class BuilderTableUpdateSaqlainProject extends Migration
     {
         Schema::table('saqlain_project_', function($table)
         {
-            $table->dropColumn('year');
+            $table->dropColumn('url');
         });
     }
 }

@@ -170,7 +170,14 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
         // line 81
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/freelancer.min.js\"");
         echo "\"></script>
-    
+    <script>
+    // Auto open modal for direct link
+    \$(document).ready(function() {
+    if (window.location.hash && \$(window.location.hash).length) {
+      \$(\"#auto-\"+window.location.hash.substring(17)).trigger(\"click\");
+        }
+    });
+    </script>
     
   </body>
 </html>";
@@ -274,7 +281,14 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
     <script src=\"{{ 'assets/js/jqBootstrapValidation.js' | theme }}\"></script>
     <script src=\"{{ 'assets/js/contact_me.js' | theme }}\"></script>
     <script src=\"{{ 'assets/js/freelancer.min.js\"' | theme }}\"></script>
-    
+    <script>
+    // Auto open modal for direct link
+    \$(document).ready(function() {
+    if (window.location.hash && \$(window.location.hash).length) {
+      \$(\"#auto-\"+window.location.hash.substring(17)).trigger(\"click\");
+        }
+    });
+    </script>
     
   </body>
 </html>", "C:\\xampp\\htdocs\\myportfolio/themes/myportfolio/layouts/default.htm", "");

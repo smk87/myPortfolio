@@ -24,7 +24,7 @@ class __TwigTemplate_14470cf8277c86f282a5d747295fb5c513821037c5a8328ae4ccb370928
   id=\"carouselExampleControls\"
   class=\"carousel slide\"
   data-ride=\"carousel\"
-  style=\"background-color: #6A89CC;radius:15px\"
+  style=\"background-color: white;\"
 >
   <div class=\"carousel-inner\">
     ";
@@ -39,7 +39,7 @@ class __TwigTemplate_14470cf8277c86f282a5d747295fb5c513821037c5a8328ae4ccb370928
       <img src=\"";
                 // line 10
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", []), "html", null, true);
-                echo "\" class=\"d-block mx-auto rounded\" style=\"width:800px;radius:15px\" alt=\"...\" />
+                echo "\" class=\"d-block mx-auto\" style=\"width:700px;border:5px solid black;border-radius: 6%\" alt=\"...\" />
     </div>
     ";
             } else {
@@ -48,7 +48,7 @@ class __TwigTemplate_14470cf8277c86f282a5d747295fb5c513821037c5a8328ae4ccb370928
       <img src=\"";
                 // line 14
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", []), "html", null, true);
-                echo "\" class=\"d-block mx-auto rounded\" style=\"width:800px;radius:15px\" alt=\"...\" />
+                echo "\" class=\"d-block mx-auto\" style=\"width:700px;border:5px solid black;border-radius: 6%\" alt=\"...\" />
     </div>
     ";
             }
@@ -102,16 +102,16 @@ class __TwigTemplate_14470cf8277c86f282a5d747295fb5c513821037c5a8328ae4ccb370928
   id=\"carouselExampleControls\"
   class=\"carousel slide\"
   data-ride=\"carousel\"
-  style=\"background-color: #6A89CC;radius:15px\"
+  style=\"background-color: white;\"
 >
   <div class=\"carousel-inner\">
     {% for key, image in images %} {% if key==0 %}
     <div class=\"carousel-item active\">
-      <img src=\"{{ image.path }}\" class=\"d-block mx-auto rounded\" style=\"width:800px;radius:15px\" alt=\"...\" />
+      <img src=\"{{ image.path }}\" class=\"d-block mx-auto\" style=\"width:700px;border:5px solid black;border-radius: 6%\" alt=\"...\" />
     </div>
     {% else %}
     <div class=\"carousel-item\">
-      <img src=\"{{ image.path }}\" class=\"d-block mx-auto rounded\" style=\"width:800px;radius:15px\" alt=\"...\" />
+      <img src=\"{{ image.path }}\" class=\"d-block mx-auto\" style=\"width:700px;border:5px solid black;border-radius: 6%\" alt=\"...\" />
     </div>
     {% endif %} {% endfor %}
   </div>
