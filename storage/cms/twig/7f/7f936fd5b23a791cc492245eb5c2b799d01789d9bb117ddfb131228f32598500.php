@@ -98,76 +98,93 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
         // line 53
         echo "  </head>
-  <body>
+  <body id=\"page-top\">
     
      ";
         // line 56
+        $_minify = System\Classes\CombineAssets::instance()->useMinify;
+        echo '<script src="'. Request::getBasePath()
+                .'/modules/system/assets/js/framework'.($_minify ? '-min' : '').'.js"></script>'.PHP_EOL;
+        unset($_minify);
+        // line 57
+        echo "     ";
+        $_minify = System\Classes\CombineAssets::instance()->useMinify;
+        if ($_minify) {
+            echo '<script src="'. Request::getBasePath()
+                    .'/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
+        }
+        else {
+            echo '<script src="'. Request::getBasePath()
+                    .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
+            echo '<script src="'. Request::getBasePath()
+                    .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
+        }
+        echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
+                    .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
+        unset($_minify);
+        // line 58
+        echo "     ";
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/navbar"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 57
+        // line 59
         echo "    
     <header id=\"layout-header\">
       ";
-        // line 59
+        // line 61
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 60
+        // line 62
         echo "    </header>
 
     <!-- Content -->
     <section id=\"layout-content\">
       ";
-        // line 64
+        // line 66
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 65
+        // line 67
         echo "    </section>
 
       ";
-        // line 67
+        // line 69
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/about"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 68
-        echo "
-    <!-- Footer -->
-    <footer id=\"layout-footer\">
-      ";
-        // line 71
+        // line 70
+        echo "      ";
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 72
-        echo "    </footer>
-
+        // line 71
+        echo "
     <!-- Scripts -->
     <script src=\"";
-        // line 75
+        // line 73
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery/jquery.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 76
+        // line 74
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap/js/bootstrap.bundle.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 77
+        // line 75
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery-easing/jquery.easing.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 78
+        // line 76
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/magnific-popup/jquery.magnific-popup.min.js");
         echo "\"></script>
     <script src=\"";
-        // line 79
+        // line 77
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jqBootstrapValidation.js");
         echo "\"></script>
     <script src=\"";
-        // line 80
+        // line 78
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/contact_me.js");
         echo "\"></script>
     <script src=\"";
-        // line 81
+        // line 79
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/freelancer.min.js\"");
         echo "\"></script>
     <script>
@@ -195,7 +212,7 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
 
     public function getDebugInfo()
     {
-        return array (  171 => 81,  167 => 80,  163 => 79,  159 => 78,  155 => 77,  151 => 76,  147 => 75,  142 => 72,  138 => 71,  133 => 68,  129 => 67,  125 => 65,  123 => 64,  117 => 60,  113 => 59,  109 => 57,  105 => 56,  100 => 53,  97 => 52,  91 => 49,  81 => 42,  61 => 25,  52 => 19,  45 => 15,  41 => 14,  36 => 12,  23 => 1,);
+        return array (  188 => 79,  184 => 78,  180 => 77,  176 => 76,  172 => 75,  168 => 74,  164 => 73,  160 => 71,  155 => 70,  151 => 69,  147 => 67,  145 => 66,  139 => 62,  135 => 61,  131 => 59,  126 => 58,  110 => 57,  105 => 56,  100 => 53,  97 => 52,  91 => 49,  81 => 42,  61 => 25,  52 => 19,  45 => 15,  41 => 14,  36 => 12,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -253,8 +270,10 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
     />
     {% styles %}
   </head>
-  <body>
+  <body id=\"page-top\">
     
+     {% framework %}
+     {% framework extras %}
      {% partial 'site/navbar' %}
     
     <header id=\"layout-header\">
@@ -267,11 +286,7 @@ class __TwigTemplate_9df91c01a6b2d4f6db40d159a6c9666f55b75975a9d2001af1dcc31a6bf
     </section>
 
       {% partial 'site/about' %}
-
-    <!-- Footer -->
-    <footer id=\"layout-footer\">
       {% partial 'site/footer' %}
-    </footer>
 
     <!-- Scripts -->
     <script src=\"{{ 'assets/vendor/jquery/jquery.min.js' | theme }}\"></script>

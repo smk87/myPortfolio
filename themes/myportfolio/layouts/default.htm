@@ -52,8 +52,10 @@
     />
     {% styles %}
   </head>
-  <body>
+  <body id="page-top">
     
+     {% framework %}
+     {% framework extras %}
      {% partial 'site/navbar' %}
     
     <header id="layout-header">
@@ -66,11 +68,7 @@
     </section>
 
       {% partial 'site/about' %}
-
-    <!-- Footer -->
-    <footer id="layout-footer">
       {% partial 'site/footer' %}
-    </footer>
 
     <!-- Scripts -->
     <script src="{{ 'assets/vendor/jquery/jquery.min.js' | theme }}"></script>

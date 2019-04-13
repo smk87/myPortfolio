@@ -24,9 +24,12 @@ class __TwigTemplate_37db30f7227b17a5cfe930e82d3a05fd3d8ddd08b41636f571c5e67e3f1
       <div class=\"container\">
         <img
           class=\"img-fluid mb-5 d-block mx-auto\"
-          src=\"storage/app/media/44668850_2405994726093957_1747904230359826432_o.jpg\"
+          src=\"";
+        // line 5
+        echo $this->extensions['System\Twig\Extension']->mediaFilter("me.jpg");
+        echo "\"
           alt=\"\"
-          width=\"200px\"
+          width=\"300px\"
           style=\"border-radius: 50%;\"
         />
         <h1 class=\"text-uppercase mb-0\">Saqlain Mahmud</h1>
@@ -43,9 +46,14 @@ class __TwigTemplate_37db30f7227b17a5cfe930e82d3a05fd3d8ddd08b41636f571c5e67e3f1
         return "C:\\xampp\\htdocs\\myportfolio/themes/myportfolio/partials/site/header.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  23 => 1,);
+        return array (  29 => 5,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -54,9 +62,9 @@ class __TwigTemplate_37db30f7227b17a5cfe930e82d3a05fd3d8ddd08b41636f571c5e67e3f1
       <div class=\"container\">
         <img
           class=\"img-fluid mb-5 d-block mx-auto\"
-          src=\"storage/app/media/44668850_2405994726093957_1747904230359826432_o.jpg\"
+          src=\"{{'me.jpg'|media}}\"
           alt=\"\"
-          width=\"200px\"
+          width=\"300px\"
           style=\"border-radius: 50%;\"
         />
         <h1 class=\"text-uppercase mb-0\">Saqlain Mahmud</h1>

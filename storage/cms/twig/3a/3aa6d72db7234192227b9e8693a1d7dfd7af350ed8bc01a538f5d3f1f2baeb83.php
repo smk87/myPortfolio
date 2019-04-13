@@ -21,12 +21,14 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
     {
         // line 1
         echo "<!-- Footer -->
-<footer class=\"footer text-center\">
-  <div class=\"container\">
+<footer class=\"footer text-center\" id=\"contact\" style=\"padding-top: 350px\">
+  <div class=\"container\" style=\"margin-bottom: 300px;\">
     <div class=\"row\">
       <div class=\"col-md-4 mb-5 mb-lg-0\">
         <h4 class=\"text-uppercase mb-4\">Location</h4>
-        <p class=\"lead mb-0\">2215 John Daniel Drive <br />Clark, MO 65243</p>
+        <p class=\"lead mb-0\">
+          6/2-D, Nahar Villa, Adarshahpalli, Ibrahimpur, Dhaka-1206 <br />
+        </p>
       </div>
       <div class=\"col-md-4 mb-5 mb-lg-0\">
         <h4 class=\"text-uppercase mb-4\">Around the Web</h4>
@@ -34,7 +36,7 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
           <li class=\"list-inline-item\">
             <a
               class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
+              href=\"https://www.facebook.com/saqlaink2\"
             >
               <i class=\"fab fa-fw fa-facebook-f\"></i>
             </a>
@@ -42,23 +44,7 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
           <li class=\"list-inline-item\">
             <a
               class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
-            >
-              <i class=\"fab fa-fw fa-google-plus-g\"></i>
-            </a>
-          </li>
-          <li class=\"list-inline-item\">
-            <a
-              class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
-            >
-              <i class=\"fab fa-fw fa-twitter\"></i>
-            </a>
-          </li>
-          <li class=\"list-inline-item\">
-            <a
-              class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
+              href=\"https://www.linkedin.com/in/smk87/\"
             >
               <i class=\"fab fa-fw fa-linkedin-in\"></i>
             </a>
@@ -66,18 +52,22 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
           <li class=\"list-inline-item\">
             <a
               class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
+              href=\"https://github.com/smk87\"
             >
-              <i class=\"fab fa-fw fa-dribbble\"></i>
+              <i class=\"fab fa-fw fa-github\"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class=\"col-md-4\">
-        <h4 class=\"text-uppercase mb-4\">About Freelancer</h4>
+        <h4 class=\"text-uppercase mb-4\">Contact Info</h4>
         <p class=\"lead mb-0\">
-          Freelance is a free to use, open source Bootstrap theme created by
-          <a href=\"http://startbootstrap.com\">Start Bootstrap</a>.
+          <i class=\"fa fa-envelope mr-1\"></i>
+          smk201514087@gmail.com
+        </p>
+        <p class=\"lead mb-0\">
+          <i class=\"fa fa-mobile mr-1\"></i>
+          01712126596
         </p>
       </div>
     </div>
@@ -104,12 +94,14 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
     public function getSourceContext()
     {
         return new Twig_Source("<!-- Footer -->
-<footer class=\"footer text-center\">
-  <div class=\"container\">
+<footer class=\"footer text-center\" id=\"contact\" style=\"padding-top: 350px\">
+  <div class=\"container\" style=\"margin-bottom: 300px;\">
     <div class=\"row\">
       <div class=\"col-md-4 mb-5 mb-lg-0\">
         <h4 class=\"text-uppercase mb-4\">Location</h4>
-        <p class=\"lead mb-0\">2215 John Daniel Drive <br />Clark, MO 65243</p>
+        <p class=\"lead mb-0\">
+          6/2-D, Nahar Villa, Adarshahpalli, Ibrahimpur, Dhaka-1206 <br />
+        </p>
       </div>
       <div class=\"col-md-4 mb-5 mb-lg-0\">
         <h4 class=\"text-uppercase mb-4\">Around the Web</h4>
@@ -117,7 +109,7 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
           <li class=\"list-inline-item\">
             <a
               class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
+              href=\"https://www.facebook.com/saqlaink2\"
             >
               <i class=\"fab fa-fw fa-facebook-f\"></i>
             </a>
@@ -125,23 +117,7 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
           <li class=\"list-inline-item\">
             <a
               class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
-            >
-              <i class=\"fab fa-fw fa-google-plus-g\"></i>
-            </a>
-          </li>
-          <li class=\"list-inline-item\">
-            <a
-              class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
-            >
-              <i class=\"fab fa-fw fa-twitter\"></i>
-            </a>
-          </li>
-          <li class=\"list-inline-item\">
-            <a
-              class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
+              href=\"https://www.linkedin.com/in/smk87/\"
             >
               <i class=\"fab fa-fw fa-linkedin-in\"></i>
             </a>
@@ -149,18 +125,22 @@ class __TwigTemplate_d5505068306789f982fce9802a22655b3ed049c1596d60d36ccde8c59c0
           <li class=\"list-inline-item\">
             <a
               class=\"btn btn-outline-light btn-social text-center rounded-circle\"
-              href=\"#\"
+              href=\"https://github.com/smk87\"
             >
-              <i class=\"fab fa-fw fa-dribbble\"></i>
+              <i class=\"fab fa-fw fa-github\"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class=\"col-md-4\">
-        <h4 class=\"text-uppercase mb-4\">About Freelancer</h4>
+        <h4 class=\"text-uppercase mb-4\">Contact Info</h4>
         <p class=\"lead mb-0\">
-          Freelance is a free to use, open source Bootstrap theme created by
-          <a href=\"http://startbootstrap.com\">Start Bootstrap</a>.
+          <i class=\"fa fa-envelope mr-1\"></i>
+          smk201514087@gmail.com
+        </p>
+        <p class=\"lead mb-0\">
+          <i class=\"fa fa-mobile mr-1\"></i>
+          01712126596
         </p>
       </div>
     </div>
