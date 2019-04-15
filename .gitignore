@@ -19,6 +19,7 @@ nginx-ssl.error.log
 php-errors.log
 sftp-config.json
 selenium.php
+myportfolio.zip
 
 # for netbeans compiler
 nbproject
