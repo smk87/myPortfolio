@@ -4,7 +4,7 @@
 
 ### OctoberCms ###
 /bootstrap/compiled.php
-/vendor
+# /vendor
 composer.phar
 .DS_Store
 .idea
