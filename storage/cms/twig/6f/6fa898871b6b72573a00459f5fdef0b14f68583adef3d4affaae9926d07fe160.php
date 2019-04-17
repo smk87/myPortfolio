@@ -68,7 +68,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             }
             // line 20
             echo "
-        <div class=\"col-md-6 col-lg-3\">
+        <div class=\"col-md-6 col-lg-4\">
           <a class=\"portfolio-item d-block mx-auto\" id=\"auto-";
             // line 22
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "id", []), "html", null, true);
@@ -89,13 +89,13 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["record"], "name", []), "html", null, true);
             echo "</h4>
             <img
-              class=\"img-fluid rounded mx-auto d-block\"
+              class=\"img-fluid rounded mx-auto d-block h-50\"
               src=\"";
             // line 35
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["record"], "thumbnail", []), "path", []), "html", null, true);
             echo "\"
               alt=\"\"
-              width=\"100%\"
+              style=\"max-height:200px\"
             />
           </a>
         </div>
@@ -223,7 +223,7 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
       >
         {% endif %}
 
-        <div class=\"col-md-6 col-lg-3\">
+        <div class=\"col-md-6 col-lg-4\">
           <a class=\"portfolio-item d-block mx-auto\" id=\"auto-{{record.id}}\" href=\"#portfolio-modal-{{record.id}}\">
             <div
               class=\"portfolio-item-caption rounded d-flex position-absolute h-100 w-100\"
@@ -236,10 +236,10 @@ class __TwigTemplate_2e900cfe95d887a8e5c10f1c532875381acf23fd54dcca6752257c94fed
             </div>
             <h4 class=\"text-center\">{{ record.name }}</h4>
             <img
-              class=\"img-fluid rounded mx-auto d-block\"
+              class=\"img-fluid rounded mx-auto d-block h-50\"
               src=\"{{record.thumbnail.path}}\"
               alt=\"\"
-              width=\"100%\"
+              style=\"max-height:200px\"
             />
           </a>
         </div>

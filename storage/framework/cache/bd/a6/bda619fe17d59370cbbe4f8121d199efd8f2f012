@@ -1,4 +1,4 @@
-1555248671a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:3633:"title = "Index"
+1555519408a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:3650:"title = "Index"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -33,7 +33,7 @@ pageNumber = "{{ :page }}"
       >
         {% endif %}
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" id="auto-{{record.id}}" href="#portfolio-modal-{{record.id}}">
             <div
               class="portfolio-item-caption rounded d-flex position-absolute h-100 w-100"
@@ -46,10 +46,10 @@ pageNumber = "{{ :page }}"
             </div>
             <h4 class="text-center">{{ record.name }}</h4>
             <img
-              class="img-fluid rounded mx-auto d-block"
+              class="img-fluid rounded mx-auto d-block h-50"
               src="{{record.thumbnail.path}}"
               alt=""
-              width="100%"
+              style="max-height:200px"
             />
           </a>
         </div>
@@ -97,7 +97,7 @@ pageNumber = "{{ :page }}"
       {% endfor %}
     </div>
   </div>
-</section>";s:5:"mtime";i:1555146713;s:6:"markup";s:3310:"<section class="portfolio" id="portfolio">
+</section>";s:5:"mtime";i:1555517112;s:6:"markup";s:3327:"<section class="portfolio" id="portfolio">
   <div class="container">
     <h2 class="text-center text-uppercase text-secondary mb-0">
       Projects
@@ -117,7 +117,7 @@ pageNumber = "{{ :page }}"
       >
         {% endif %}
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" id="auto-{{record.id}}" href="#portfolio-modal-{{record.id}}">
             <div
               class="portfolio-item-caption rounded d-flex position-absolute h-100 w-100"
@@ -130,10 +130,10 @@ pageNumber = "{{ :page }}"
             </div>
             <h4 class="text-center">{{ record.name }}</h4>
             <img
-              class="img-fluid rounded mx-auto d-block"
+              class="img-fluid rounded mx-auto d-block h-50"
               src="{{record.thumbnail.path}}"
               alt=""
-              width="100%"
+              style="max-height:200px"
             />
           </a>
         </div>
