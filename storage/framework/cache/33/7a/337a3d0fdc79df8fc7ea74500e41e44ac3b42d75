@@ -1,10 +1,10 @@
-1555519702a:1:{s:20:"site/imageslider.htm";a:6:{s:8:"fileName";s:20:"site/imageslider.htm";s:7:"content";s:1210:"==
+1555575022a:1:{s:20:"site/imageslider.htm";a:6:{s:8:"fileName";s:20:"site/imageslider.htm";s:7:"content";s:1210:"==
 <div
   id="carouselExampleControls"
   class="carousel slide carousel-fade"
   data-ride="carousel"
   data-interval=2000
-  style="background-color: white;width:1000px;margin-left: -15%"
+  style="background-color: white;width:1000px;margin-left: -18%"
 >
   <div class="carousel-inner">
     {% for key, image in images %} {% if key==0 %}
@@ -35,12 +35,12 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>";s:5:"mtime";i:1555517648;s:6:"markup";s:1206:"<div
+</div>";s:5:"mtime";i:1555574420;s:6:"markup";s:1206:"<div
   id="carouselExampleControls"
   class="carousel slide carousel-fade"
   data-ride="carousel"
   data-interval=2000
-  style="background-color: white;width:1000px;margin-left: -15%"
+  style="background-color: white;width:1000px;margin-left: -18%"
 >
   <div class="carousel-inner">
     {% for key, image in images %} {% if key==0 %}

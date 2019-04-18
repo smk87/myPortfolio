@@ -25,7 +25,7 @@ class __TwigTemplate_14470cf8277c86f282a5d747295fb5c513821037c5a8328ae4ccb370928
   class=\"carousel slide carousel-fade\"
   data-ride=\"carousel\"
   data-interval=2000
-  style=\"background-color: white;width:1000px;margin-left: -15%\"
+  style=\"background-color: white;width:1000px;margin-left: -18%\"
 >
   <div class=\"carousel-inner\">
     ";
@@ -104,7 +104,7 @@ class __TwigTemplate_14470cf8277c86f282a5d747295fb5c513821037c5a8328ae4ccb370928
   class=\"carousel slide carousel-fade\"
   data-ride=\"carousel\"
   data-interval=2000
-  style=\"background-color: white;width:1000px;margin-left: -15%\"
+  style=\"background-color: white;width:1000px;margin-left: -18%\"
 >
   <div class=\"carousel-inner\">
     {% for key, image in images %} {% if key==0 %}
